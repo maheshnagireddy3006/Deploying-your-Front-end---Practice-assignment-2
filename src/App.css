@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: hsl(194, 76%, 74%); /* medium grey background */
+  color: #ffffff; /* white text */
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+h1 {
+  margin: 30px 0 10px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 
+    0 3px 6px rgba(0, 0, 0, 0.8),   
+    0 6px 12px rgba(0, 0, 0, 0.5); 
+}
+
+h4 {
+  text-shadow: 
+    0 3px 6px rgba(0, 0, 0, 0.8),   
+    0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1100px;
+}
+
+/* Card Styles */
+.card {
+  background: hsl(180, 1%, 22%); /* slightly lighter grey than background */
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 
+    0 6px 14px rgba(0, 0, 0, 0.6),
+    0 0 10px rgba(0, 0, 0, 0.4);
+  width: 260px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 
+    0 10px 24px rgba(0, 0, 0, 0.8),
+    0 0 18px rgba(0, 0, 0, 0.6);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Title */
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 
+    0 2px 6px rgba(0, 0, 0, 0.9),
+    0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Card Text */
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #f1f1f1; /* softer white */
+  text-shadow: 
+    0 2px 5px rgba(0, 0, 0, 0.7);
+}
